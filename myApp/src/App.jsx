@@ -7,6 +7,7 @@ import Botao from './componentes/Botao'
 import TesteEstado from './componentes/TesteEstado'
 import Gato from './componentes/Gato'
 import './meuCss.css'
+import Layout from './pages/Layout'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <>
-      <div>
+      {/* <div>
 
         <Gato/>
         <TesteEstado/>
@@ -36,8 +37,16 @@ function App() {
 
         <ListaCartoes pessoas={pessoas} />
 
-      </div>
+      </div> */}
+
+      <Layout/>
+
+      
+
+
+
     </>
+
   )
 }
 
