@@ -1,50 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Cartao from './componentes/Cartao'
-import ListaCartoes from './componentes/ListaCartoes'
-import Botao from './componentes/Botao'
-import TesteEstado from './componentes/TesteEstado'
-import Gato from './componentes/Gato'
-import './meuCss.css'
-import Layout from './pages/Layout'
-
+import React from 'react'
+import Rotas from './rotas/rotas'
+import { BrowserRouter } from 'react-router-dom'
 function App() {
-  const [count, setCount] = useState(0)
-
-  let pessoa = {
-    nome: 'Ana',
-    img: 'https://www.w3schools.com/howto/img_avatar2.png',
-    descricao: 'Desenvolvedora Full Stack'
-  }
-
-  let pessoas = [
-    {nome: 'Ana', img: 'https://www.w3schools.com/howto/img_avatar2.png', descricao: 'Desenvolvedora Full Stack'},
-    {nome: 'João', img: 'https://www.w3schools.com/howto/img_avatar.png', descricao: 'Desenvolvedor Front-end'},
-    {nome: 'Maria', img: 'https://www.w3schools.com/howto/img_avatar2.png', descricao: 'Desenvolvedora Back-end'}
-  ]
-
   return (
-    <>
-      {/* <div>
-
-        <Gato/>
-        <TesteEstado/>
-
-        <Botao/>
-        
-        <Cartao nome={pessoa.nome} imagem={pessoa.img} descricao={pessoa.descricao} />
-
-        <ListaCartoes pessoas={pessoas} />
-
-      </div> */}
-
-      <Layout/>
-
-      
-
-
-
+    <> 
+      <h1>App</h1> 
+      <BrowserRouter>
+        <Rotas />
+      </BrowserRouter>
+         
+      <h1>rodapé</h1>
     </>
 
   )
